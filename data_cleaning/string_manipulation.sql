@@ -4,7 +4,7 @@ SELECT
 FROM
     customer_data.customer_address;
 
---Uses length() function
+--Uses LENGTH() function
 SELECT
     country
 FROM
@@ -12,7 +12,7 @@ FROM
 WHERE
     LENGTH(country) > 2;
 
---Uses substr() function
+--Uses SUBSTR() function
 SELECT
     DISTINCT customer_id
 FROM
@@ -28,7 +28,7 @@ FROM
 WHERE
     LENGTH(state) > 2;
 
---Using the trim() function
+--Using the TRIM() function
 SELECT
     DISTINCT customer_id
 FROM
