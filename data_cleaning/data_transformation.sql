@@ -1,5 +1,5 @@
 /*Return all purchase prices in descending order
-    as float variables */
+    as float variables*/
 SELECT
     CAST(purchase_price AS FLOAT)
 FROM
@@ -17,7 +17,7 @@ WHERE
     date BETWEEN '2020-12-01' AND '2020-12-31';
 
 /*Returns list of color and product code data
-    for couch purchases */
+    for couch purchases*/
 SELECT
     CONCAT(product_code, product_color) AS new_product_code
 FROM
@@ -31,7 +31,7 @@ SELECT
 FROM
     customer_data.customer_purchase;
 
-
+/*Returns all customer ID's with the first name corrected*/
 SELECT
     customer_id,
     CASE
