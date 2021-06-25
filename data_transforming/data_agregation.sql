@@ -32,3 +32,14 @@ JOIN
     warehouse_orders.Warehouse warehouse ON orders.warehouse_id = warehouse.warehouse_id
 GROUP BY
     warehouse_state;
+
+/*Creates a table of the number of rides per year*/
+SELECT
+    EXTRACT(YEAR FROM STARTTIME) as year,
+    COUNT(*) AS num_of_rides,
+FROM
+    new_york.citibike_trips
+GROUP BY
+    year
+ORDER BY
+    year DESC;
